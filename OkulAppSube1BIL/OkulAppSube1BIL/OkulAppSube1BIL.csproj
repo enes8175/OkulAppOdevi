@@ -53,16 +53,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmOgrKayit.cs">
+    <Compile Include="frmOgrkayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmOgrKayit.Designer.cs">
-      <DependentUpon>frmOgrKayit.cs</DependentUpon>
+    <Compile Include="frmOgrkayit.Designer.cs">
+      <DependentUpon>frmOgrkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOgrtkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrtkayit.Designer.cs">
+      <DependentUpon>frmOgrtkayit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmOgrKayit.resx">
-      <DependentUpon>frmOgrKayit.cs</DependentUpon>
+    <EmbeddedResource Include="frmOgrkayit.resx">
+      <DependentUpon>frmOgrkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrtkayit.resx">
+      <DependentUpon>frmOgrtkayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

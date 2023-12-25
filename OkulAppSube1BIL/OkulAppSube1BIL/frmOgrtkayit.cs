@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace OkulAppSube1BIL
 {
-    public partial class frmOgrkayit : Form
+    public partial class frmOgrtkayit : Form
     {
-        public frmOgrkayit()
+        public frmOgrtkayit()
         {
             InitializeComponent();
         }
@@ -24,8 +24,8 @@ namespace OkulAppSube1BIL
         {
             try
             {
-                var obl = new OgrenciBL();
-                bool sonuc = obl.OgrenciEkle(new Ogrenci { Ad = txtAd.Text.Trim(), Soyad = txtSoyad.Text.Trim(), Numara = txtNumara.Text.Trim() });
+                var obl = new OgretmenBL();
+                bool sonuc = obl.OgretmenEkle(new Ogretmen { Ad = txtAd.Text.Trim(), Soyad = txtSoyad.Text.Trim(), Tckimlik = txtTckimlik.Text.Trim() });
                 MessageBox.Show(sonuc ? "Ekleme Başarılı!" : "Ekleme Başarısız!!");
             }
             catch (SqlException ex)
@@ -33,7 +33,7 @@ namespace OkulAppSube1BIL
                 switch (ex.Number)
                 {
                     case 2627:
-                        MessageBox.Show("Bu numaralı öğrenci daha önce kayıtlı");
+                        MessageBox.Show("Bu tc kimlikli öğretmen daha önce kayıtlı");
                         break;
                     default:
                         MessageBox.Show("Veritabanı hatası");
